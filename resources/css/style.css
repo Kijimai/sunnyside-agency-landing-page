@@ -1,0 +1,139 @@
+:root {
+/** Primary **/
+  --soft-red: #fe7867;
+  --yellow: #fad400;
+  --dark-desaturated-cyan: #25564b;
+  --dark-blue: #19536b;
+  --dark-moderate-cyan: #458c7e;
+  
+/* Neutral */
+  
+  --very-dark-desaturated-blue: #23303e;
+  --very-dark-grayish-blue: #5a636c;
+  --dark-grayish-blue: #818498;
+  --grayish-blue: #a7abae;
+  --white: #ffffff;
+  
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  padding: 3.2rem 2.4rem 0 2.4rem;
+  background-image: url('../images/mobile/image-header.jpg');
+  background-size: contain;
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  align-self: flex-start;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links-main-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.nav-hider {
+  width: 100%;
+  display: none;
+}
+
+.nav-hider.active {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.6rem;
+}
+
+.nav-links {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-family: 'Barlow', sans-serif;
+  font-size: 2rem;
+  width: 100%;
+  z-index: 100;
+}
+
+.arrow {
+  align-self: flex-end;
+  height: 0;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid white;
+  border-bottom: 10px solid white;
+}
+
+.nav-link {
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+  padding: 1.6rem 3.2rem;
+  margin: 1.6rem 0;
+}
+
+.nav-link.contact {
+  font-family: 'Fraunces', sans-serif;
+  color: var(--very-dark-desaturated-blue);
+  border-radius: 2.8rem;
+  background-color: var(--yellow);
+  text-transform: uppercase;
+}
+
+.main-header {
+  top: 15rem;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  font-family: 'Fraunces', sans-serif;
+  font-size: 4rem;
+  text-transform: uppercase;
+  z-index: 1;
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+  color: var(--white);
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
