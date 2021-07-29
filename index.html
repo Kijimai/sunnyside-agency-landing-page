@@ -14,95 +14,96 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <header class="header">
-      <nav class="navigator">
-        <a class="logo" href="#"><img src="resources/images/logo.svg" alt="logo"></a>
+    <nav>
+      <div class="nav-container">
 
-        <div class="nav-links-main-container">
-          <button id="nav-btn" class="nav-btn"><img src="resources/images/icon-hamburger.svg" alt="navigator hamburger button"></button>
-          <div class="nav-hider" id="nav-hider" aria-hidden="true">
-            <div class="arrow" aria-hidden="true"></div>
-            <div class="nav-links" id="nav-links">
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Services</a>
-              <a class="nav-link" href="#">Projects</a>
-              <a class="nav-link contact" href="#">Contact</a>
-            </div>
+        <div class="nav-inner-container flex">
+          <img class="site-logo" src="resources/images/logo.svg" alt="site logo">
+
+          <button class="nav-btn" id="nav-btn"><img class="nav-btn-img" src="resources/images/icon-hamburger.svg" alt="navigator links button"></button>
+
+        </div>
+
+        <div id="nav-hider" class="nav-hider">
+          <div class="arrow"></div>
+          <div class="nav-links-container flex">
+            <ul>
+              <li><a class="nav-link" href="#">About</a></li>
+              <li><a class="nav-link" href="#">Services</a></li>
+              <li><a class="nav-link" href="#">Projects</a></li>
+              <li><a class="nav-link contact" href="#">Contact</a></li>
+            </ul>
           </div>
         </div>
 
-      </nav>
-      <h1 class="main-header">We are creatives</h1>
+
+      </div>
+    </nav>
+    <header class="flex">
+      <h1>We are creatives</h1>
+      <a href="#" class="arrow-btn"><img src="resources/images/icon-arrow-down.svg" alt="arrow pointing down"></a>
+
     </header>
+    <section class="section-container grid">
+      <img class="section-image" src="resources/images/mobile/image-transform.jpg" alt="egg on yellow backdrop">
+      <div class="section-box">
+        <h2 class="section-header">Transform your brand</h2>
 
-    <main>
+        <p class="section-paragraph">
+          We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        
+        <a class="learn-btn" href="#"><span class="underline">Learn more</span></a>
+      </div>
+      <img class="section-image" src="resources/images/mobile/image-stand-out.jpg" alt="">
 
-      <section class="site-section">
-        <div class="box-container">
-          <h2 class="section-header">Transform your brand</h2>
-
-          <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+      <div class="section-box">
+        <h2 class="section-header">Stand out to the right audience</h2>
+        
+        <p class="section-paragraph">
+          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+        </p>    
   
-          <a href="#">Learn more</a>
-        </div>
-        <img src="resources/images/mobile/image-transform.jpg" alt="egg on yellow backdrop">
-        <div class="box-container">
-          <h2>Stand out to the right audience</h2>
+        <a class="learn-btn" href="#"><span class="underline">Learn more</span></a>
+      </div>
 
-          <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
-  
-          <a href="#">Learn more</a>
-        </div>
-
-        <div class="box-container">
-          <h3>Graphic design</h3>
-        
-          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
-        </div>
-        <div class="box-container">
-          <h3>Photography</h3>
-        
-          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-        </div>
-      </section>
-      <section class="site-section" id="testimonials">
-        
-      </section>
-        
-
+      Graphic design
     
-
+      Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      Photography
     
-
-    
+      Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+    </section>
+    <section>
       Client testimonials
-    
+
       We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
       Emily R.
       Marketing Director
-    
+      
       Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
       Thomas S.
       Chief Operating Officer
-    
+      
       Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
       Jennie F.
       Business Owner
-    
-      About
-      Services
-      Projects
-      Contact
-    
+    </section>
 
 
-    </main>
+About
+Services
+Projects
+Contact
+
+
+
 
 
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Kijimai">Kijimai</a>.
     </div>
     <script src="resources/js/script.js"></script>
   </body>

@@ -1,8 +1,8 @@
 const navBtn = document.getElementById('nav-btn')
-const navLinksContainer = document.getElementById('nav-hider')
+const navHider = document.getElementById('nav-hider')
 
-navBtn.addEventListener('click', displayNav)
+navBtn.addEventListener('click', toggleActiveNav)
 
-function displayNav() {
-  navLinksContainer.classList.toggle('active')
+function toggleActiveNav() {
+  navHider.classList.toggle('active')
 }
