@@ -64,6 +64,7 @@ header {
   background-image: url('../images/mobile/image-header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   flex-direction: column;
   text-align: center;
   justify-content: center;
@@ -228,6 +229,7 @@ header h1 {
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   font-weight: 900;
+  margin-top: 6.4rem;
 }
 
 .testimonials-container {
@@ -323,9 +325,6 @@ footer {
   max-width: 16.4rem;
 }
 
-
-
-
 /* Attribution */
 
 .attribution { 
@@ -340,12 +339,17 @@ footer {
 /* Media Queries */
 
 @media (min-width: 600px) {
+  header {
+    background-image: url('../images/desktop/image-header.jpg');
+  }
+}
+
+@media (min-width: 1024px) {
 
   header {
     width: 100%;
-    min-height: 100vh;
-    background-image: url('../images/desktop/image-header.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     flex-direction: column;
     text-align: center;
     justify-content: center;
@@ -358,7 +362,7 @@ footer {
   }
 
   .section-box {
-    padding: 11rem;
+    padding: 0 11rem;
     text-align: left;
   }
 
@@ -386,8 +390,48 @@ footer {
     order: 6;
   }
 
+  .section-box.graphic {
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+  }
+
+  .section-box.photography {
+    background-image: url('../images/desktop/image-photography.jpg');
+  }
+
+  /* Client Testimonials */
+
+  .testimonials-container {
+    flex-direction: row;
+    padding: 6.4rem 2.4rem;
+  }
+
+  .testimonials .section-header {
+    margin-top: 16rem;
+  }
+
+  .testimonial-box {
+    padding: 2.4rem;
+  }
+
+  /* Gallery Section */
+
+  .image-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
+  header {
+    min-height: 80rem;
+  }
+
+
+  /* Graphic Design and Photography Section */
+
+  .section-box.photography,
+  .section-box.graphic {
+    
+  }
 
 }
