@@ -80,6 +80,7 @@ header h1 {
 }
 
 .arrow-btn {
+  margin-top: 5rem;
   cursor: pointer;
 }
 
@@ -108,11 +109,12 @@ header h1 {
 }
 
 .nav-links-container ul {
+  flex-direction: column;
   list-style: none;
   text-align: center;
   font-size: 2rem;
   font-family: 'Barlow', sans-serif;
-  padding: 2rem;
+  padding: 2rem 0 4rem;
 }
 
 .nav-links-container ul li {
@@ -346,7 +348,12 @@ footer {
 
 @media (min-width: 1024px) {
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   header {
+    min-height: 80vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -354,6 +361,70 @@ footer {
     text-align: center;
     justify-content: center;
     align-items: center;
+  }
+
+  header h1 {
+    font-size: 5.6rem;
+    letter-spacing: 0.8rem;
+    padding-bottom: 5rem;
+  }
+
+  /* Navigation Section */
+
+  .nav-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-hider {
+    display: block;
+  }
+  
+  .arrow {
+    display: none;
+  }
+  
+  .nav-links-container {
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  .nav-links-container ul {
+    flex-direction: row;
+    list-style: none;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Barlow', sans-serif;
+    padding: 3.4rem;
+  }
+  
+  .nav-links-container ul li {
+    padding: 1.6rem;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: var(--white);
+  }
+  
+  .nav-link.contact {
+    background-color: rgb(255, 255, 255);
+    color: var(--very-dark-desaturated-blue);
+    padding: 1.6rem 3rem;
+    border-radius: 2.8rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .nav-link.contact:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: var(--white);
   }
 
   /* Main Sections  */
@@ -390,6 +461,11 @@ footer {
     order: 6;
   }
 
+  .section-box.photography,
+  .section-box.graphic {
+    text-align: center;
+  }
+
   .section-box.graphic {
     background-image: url('../images/desktop/image-graphic-design.jpg');
   }
@@ -398,11 +474,12 @@ footer {
     background-image: url('../images/desktop/image-photography.jpg');
   }
 
+
   /* Client Testimonials */
 
   .testimonials-container {
     flex-direction: row;
-    padding: 6.4rem 2.4rem;
+    padding: 6.4rem 2.4rem 16rem;
   }
 
   .testimonials .section-header {

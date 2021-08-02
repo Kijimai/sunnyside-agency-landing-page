@@ -8,16 +8,16 @@ function readWidth() {
   width = window.innerWidth
   document.documentElement.clientWidth
   document.body.clientWidth
+  console.log(width)
   if(width > 768) {
     changeMainImagesDesktop()
-    changeGalleryDesktop
+    changeGalleryDesktop()
     return
   } else {
     changeMainImagesMobile()
     changeGalleryMobile()
     return
   }
-  console.log(width)
 }
 
 navBtn.addEventListener('click', toggleActiveNav)
